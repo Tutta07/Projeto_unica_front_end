@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto FrontEnd Única</title>
+    <link rel="stylesheet" href="/css/Login.css">
+    <link rel="stylesheet" href="/css/CadastroPF.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <script src="/Form.js"></script>
+</head>
+
+<body>
+    <h2 class="signup">Sign up Physical Person</h2>
+    <div class="modal-dialog text-center">
+
+        <div class="col-sm-12 main-section">
+
+            <div class="modal-content">
+                <div class="col-12 user-img">
+
+                    <img src="/img/vector.png" alt="vector">
+                </div>
+
+                <form class="col-12" onsubmit="return validar();">
+                    <div class="form-group" id="name-group">
+                        <input type="text" class="form-control" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group" id="email-group">
+                        <input type="email" class="form-control" placeholder="Email" required>
+                    </div>
+                    <div class="form-group" id="user-group">
+                        <input type="text" class="form-control" placeholder="Username" required>
+                    </div>
+                    <div class="form-group" id="password-group">
+                        <input type="password" class="form-control" placeholder="Password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary"><i class="fas fa-sign-in-alt"></i> <a href="Home"></a>
+                        Sign up</button>
+                </form>
+                <div class="col-12 agree">
+                    <p>By signing up, you agree to our <a href="https://en.wikipedia.org/wiki/Term"  target="#">Terms</a>, <a href="https://www.cookiebot.com/en/"  target="#">Data Policy and
+                            Cookies Policy.</a></p>
+                </div>
+                <div class="col-12 signc">
+                    <p>Have an account?<a href="Login.html"> Log In</a></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <div class="container-footer-cadastro .col-md-6 .col-md-offset-3">
+            <div class="copyright">© Tutta e colaboradores individuais. Conteúdo está disponível sob estas licenças.
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
