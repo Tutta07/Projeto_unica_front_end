@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto FrontEnd Única</title>
     <link rel="stylesheet" href="/css/Home.css">
+    <link rel="stylesheet" href="/css/Login.css">
+    <link rel="stylesheet" href="/css/CadastroPF.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -12,7 +15,140 @@
     <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
     <script src="Form.js"></script>
 </head>
+
 <body>
-    <h1>Compre o seu semi-novo conosco</h1>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active" style="height: 80vh;">
+                <img class="d-block w-50" src="/img/carro1.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item" style="height: 80vh;">
+                <img class="d-block w-50" src="/img/carro2.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item" style="height: 80vh;">
+                <img class="d-block w-50" src="/img/carro3.jpg" alt="Third slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <div>
+        <nav class="navbar navbar-expand-lg justify-content">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <img src="/img/carrito.svg" alt="vector">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Home.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Agendamento.html">Agendar visita</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Para a familia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Para a cidade</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="row">
+        <div class="col-md-3 text-center">
+            <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="/img/citroen.jpg" alt="CITROEN">
+                <div class="card-body">
+                    <h5 class="card-title">CITROEN C4 LOUNGE</h5>
+                    <p class="card-text"> 1.6 TENDANCE 16V TURBO.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">52.405 km</li>
+                    <li class="list-group-item">Único Dono</li>
+                    <li class="list-group-item">R$ 59.890</li>
+                </ul>
+                <div class="card-body">
+                    <a href="Agendamento.html" class="card-link">Agendar uma visita</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 text-center">
+            <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="/img/ford fa.jpg" alt="FORD KA">
+                <div class="card-body">
+                    <h5 class="card-title">FORD KA</h5>
+                    <p class="card-text">1.0 TI-VCT SE PLUS MANUAL 4P.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">7.460 km</li>
+                    <li class="list-group-item">Baixa Km</li>
+                    <li class="list-group-item">R$ 48.924</li>
+                </ul>
+                <div class="card-body">
+                    <a href="Agendamento.html" class="card-link">Agendar uma visita</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 text-center">
+            <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="/img/ford fiesta.jpg" alt="FIESTA 2014">
+                <div class="card-body">
+                    <h5 class="card-title">FIESTA 2014</h5>
+                    <p class="card-text"> 1.0 ROCAM HATCH 8V MANUAL 4P.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">75.958 km</li>
+                    <li class="list-group-item">Baixa Km</li>
+                    <li class="list-group-item">R$ 27.788</li>
+                </ul>
+                <div class="card-body">
+                    <a href="Agendamento.html" class="card-link">Agendar uma visita</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 text-center">
+            <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="/img/renault.jpg" alt="KWID 2020">
+                <div class="card-body">
+                    <h5 class="card-title">KWID 2020</h5>
+                    <p class="card-text">1.0 12V SCE OUTSIDER MANUAL 4P</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">27.240 km</li>
+                    <li class="list-group-item">IPVA 2021 GRÁTIS</li>
+                    <li class="list-group-item">R$ 44.900</li>
+                </ul>
+                <div class="card-body">
+                    <a href="Agendamento.html" class="card-link">Agendar uma visita</a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
 </body>
+<footer>
+    <div class="container-footer-home  .col-md-6 .col-md-offset-3">
+        <div class="copyright">© Tutta e colaboradores individuais. Conteúdo está disponível sob estas licenças.
+        </div>
+    </div>
+</footer>
+
 </html>

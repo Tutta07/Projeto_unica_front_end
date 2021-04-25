@@ -1,0 +1,25 @@
+.navbar{
+    float: right;
+    transition:all;
+    position:absolute;
+}
+.navbar a{
+    color: white;
+}
+
+
+
+
+.card{
+    margin-left: 15px;
+    margin-top: 40%;
+}
+.container-footer-home{
+    padding: 10px;
+    font-size: 22px;
+    justify-content:center;
+    margin-top:5%;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    }

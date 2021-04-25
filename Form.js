@@ -42,15 +42,15 @@ const validateForm = (e) => {
 }
 const validateField = (expresion, input, field) => {
 	if(expresion.test(input.value)){
-		document.getElementById(`grupo__${field}`).classList.remove('formulario__grupo-incorrecto');
-		document.getElementById(`grupo__${field}`).classList.add('formulario__grupo-correcto');
+		document.getElementById(`grupo__${field}`).classList.remove('form-group-incorrecto');
+		document.getElementById(`grupo__${field}`).classList.add('form-group-correcto');
 		document.querySelector(`#grupo__${field} i`).classList.add('fa-check-circle');
 		document.querySelector(`#grupo__${field} i`).classList.remove('fa-times-circle');
 		document.querySelector(`#grupo__${field} .formulario__input-error`).classList.remove('formulario__input-error-activo');
 		fields[field] = true;
 	} else {
-		document.getElementById(`grupo__${field}`).classList.add('formulario__grupo-incorrecto');
-		document.getElementById(`grupo__${field}`).classList.remove('formulario__grupo-correcto');
+		document.getElementById(`grupo__${field}`).classList.add('form-group-incorrecto');
+		document.getElementById(`grupo__${field}`).classList.remove('form-group-correcto');
 		document.querySelector(`#grupo__${field} i`).classList.add('fa-times-circle');
 		document.querySelector(`#grupo__${field} i`).classList.remove('fa-check-circle');
 		document.querySelector(`#grupo__${field} .formulario__input-error`).classList.add('formulario__input-error-activo');
@@ -74,8 +74,8 @@ formulario.addEventListener('submit', (e) => {
 			document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo');
 		}, 5000);
 
-		document.querySelectorAll('.formulario__grupo-correcto').forEach((icono) => {
-			icono.classList.remove('formulario__grupo-correcto');
+		document.querySelectorAll('.form-group-correcto').forEach((icono) => {
+			icono.classList.remove('form-group-correcto');
 		});
 	} else {
 		document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
