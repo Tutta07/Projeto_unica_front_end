@@ -3,6 +3,9 @@
     content: "\f2bb";
 
 }
+.form-group#cnpj-group::before{
+    content: "\f016";
+  }
 .container-footer-cadastroPJ{
     padding: 10px;
     font-size: 22px;

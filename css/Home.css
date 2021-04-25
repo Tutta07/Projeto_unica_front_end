@@ -8,12 +8,17 @@
 }
 
 
+.carousel-inner{
+    border-radius: 10px;
+    border-style: groove;
 
+}
 
 .card{
-    margin-left: 15px;
-    margin-top: 40%;
+  margin-top: 40%;
 }
+
+
 .container-footer-home{
     padding: 10px;
     font-size: 22px;

@@ -50,6 +50,7 @@ padding-top: 4px;
   content: "\f007";
 }
 
+
 .form-group#password-group::before{
     content:"\f023" ;
 }
@@ -87,4 +88,8 @@ button{
     color: white;
     text-align: center;
     margin-top: 5px;
+}
+
+#boton a{
+    color: white;
 }

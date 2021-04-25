@@ -11,6 +11,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
     <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
     <script src="/Form.js"></script>
 </head>
 
@@ -27,12 +28,13 @@
                 </div>
                 <form class="col-12 formulario" id="formulario">
                     <div class="form-group" id="user-group">
-                        <input type="text" class="form-control"placeholder="Username" required>
+                        <input type="text" id="user" class="form-control"placeholder="Username" required>
                     </div>
                     <div class="form-group" id="password-group">
-                        <input type="password" class="form-control" placeholder="Password" required>
+                        <input type="password" id="password" class="form-control" placeholder="Password" required>
                     </div>
-                    <button type="submit" class="btn btn-primary" ><i class="fas fa-sign-in-alt"></i> Log In<a href="Home"></a></button>
+                    <button type="submit" id="boton" class="btn btn-primary" ><i class="fas fa-sign-in-alt"></i><a href="Home.html"></a> Log In</a></button>
+                    <p class="warnings" id="warnings"></p>
                 </form>
                 <div class="col-12 forgot">
                     <a href="ForgotPassword.html">Forgot password?</a>
